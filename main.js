@@ -1,3 +1,5 @@
+console.log("¯\\_(ツ)_/¯");
+
 // Select form tag
 const form = document.querySelector('#form');
 
