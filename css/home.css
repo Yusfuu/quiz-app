@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+/***************Body***********************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #1a1a1a;
+}
+
+#services, #footer, #projects {
+    color: #fff !important;
+}
+
+#services h1, #contact h1, #projects h1 {
+    color: #1a1a1a !important;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/***************Body***********************/
+
+/***************Section***********************/
+
+.section-one {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0061ff;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2180d8;
+}
+
+.btn:focus {
+    background-color: #2796ff;
+}
+
+.intro-text .title {
+    font-weight: 500;
+    font-size: 3em;
+    animation: float-title 1s ease;
+}
+
+@keyframes float-title {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.intro-text .subtitle {
+    margin: 16px 0px 32px 0px;
+    font-weight: 500;
+    font-size: 1.2em;
+    animation: float-subtitle 1s ease;
+}
+
+@keyframes float-subtitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    animation: slide 1.5s ease;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.cover img {
+    height: 100%;
+}
+
+/***************Section***********************/
+
+/************Header*****************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.logo {
+    cursor: pointer;
+    color: #000;
+    font-family: 'Bungee Shade', cursive !important;
+    font-size: 22px;
+}
+
+.nav_link {
+    display: flex;
+}
+
+.nav_link li {
+    padding: 0 25px;
+}
+
+.nav_link a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.reg .login {
+    color: #9c9899 !important;
+}
+
+.nav_link a:hover {
+    color: #0061ff;
+}
+
+.reg a:hover {
+    color: #0061ff !important;
+}
+
+.reg button {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 30px;
+    background-color: #3278e7;
+    height: 36px;
+    width: 133px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.reg button:hover {
+    background-color: #0061ff;
+    color: #fff;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.overlay_content {
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    opacity: 0.99;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.5s ease;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    font-size: 53px;
+    color: #edf0f1;
+    font-family: serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.overlay .close:hover {
+    color: #0061ff;
+}
+
+.link a {
+    padding: 20px 125px;
+    display: block;
+    font-size: 21px;
+    font-weight: 300;
+    color: #edf0f1;
+    text-align: center;
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.link a:hover {
+    color: #0061ff;
+    transform: translateX(4px);
+}
+
+.action button {
+    border: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 22.5px;
+    transition: all 0.3s ease;
+}
+
+.action button:hover {
+    background-color: #0061ff;
+    border-color: #0061ff;
+}
+
+.action .get_start {
+    background-color: #fff;
+    color: #000000;
+}
+
+.action .get_start:hover {
+    background-color: #0061ff;
+    border-color: #0061ff;
+    color: #fff;
+}
+
+/************Header*****************/
+
+/**********Start Of Welcome************/
+
+#services .services {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+
+#services .service-top {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-top p {
+    color: #1a1a1a;
+}
+
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#services .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(../img/Group-2.png);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#services .item-one {
+    background-image: url(../img/Group-3.png) !important;
+}
+
+#services .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#services .service-item h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/**********End Of Welcome************/
+
+/**********Start Of Project************/
+
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+#projects .projects-header h1 {
+    margin-bottom: 50px;
+}
+
+#projects .project-item {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+}
+
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#projects .project-info h1 {
+    color: #fff !important;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#projects .project-info h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#projects .project-info p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#projects .project-img {
+    flex-basis: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#projects .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .7;
+}
+
+#projects .project-img img {
+    transition: .3s ease transform;
+}
+
+#projects .project-item:hover .project-img img {
+    transform: scale(1.1);
+}
+
+#projects img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/*****/
+
+/**********End Of Project************/
+
+/******* Start of Contact ******/
+
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#contact .contact-items {
+    width: 400px;
+    cursor: pointer;
+}
+
+#contact .contact-item {
+    background-color: #fff;
+    color: black;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .contact-info h1 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/******* End of Contact ******/
+
+/******* Start of Footer ******/
+
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+}
+
+#footer h2 {
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+#footer .social-item img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover img {
+    filter: grayscale(0);
+}
+
+#footer p {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/******* End of Footer ******/
+
+#to-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+    z-index: 99;
+    color: #1a1a1a;
+    padding: 8px 8px 10px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+/*****************Responsove****************/
+
+@media (max-width: 900px) {
+    .menu {
+        display: initial;
+    }
+    .nav_link, .reg button, .reg a, .cover {
+        display: none;
+    }
+    .overlay .close {
+        right: 35px;
+    }
+    #services .service-bottom {
+        flex-wrap: wrap;
+    }
+    #projects .project-info h1 {
+        font-size: 18px !important;
+        margin: 0;
+        padding: 0;
+    }
+    #projects .project-info h2 {
+        font-size: 16px !important;
+    }
+    #contact .contact-item h1 {
+        font-size: 30px !important;
+    }
+    #projects .project-info p {
+        font-size: 12px !important;
+    }
+    #projects .project-info {
+        display: block !important;
+    }
+    #projects h1, #services h1, #contact h1 {
+        font-size: 2.5rem;
+    }
+    #to-top {
+        right: 20px;
+    }
+}
+
+/*****************Responsove****************/
